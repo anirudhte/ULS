@@ -50,7 +50,12 @@
       display: flex; align-items: flex-end; justify-content: center; margin-bottom:50px; font-size: @login-font-size-22; line-height: 30px;  text-transform: uppercase; right:0; left:0; text-align: center; width: @fullwidth; transform: skewx(15deg); transform-origin:center;
       & .login-overlay{.login-overlay-gradient(); padding:20px; display: flex; align-items: center; justify-content: center; font-family:@login-default-font; color:@login-text-color;}
    }
-   
+    
+    @media only screen {
+        @media (max-width:1000px) {
+         display: none;
+        }
+      }   
 }
 
  & .loginRight{
@@ -80,8 +85,7 @@
 
       & .error-msg{ font-family:@login-default-font; font-size:@login-font-size-12; color:@login-error-color;}
       
-     
-  
+      
 
       } 
 
@@ -91,10 +95,27 @@
        & p{ font-family:@login-default-font; font-size: @login-font-size-12; color:@login-text-color; margin-bottom: 15px;} 
        & svg{color:@login-text-color;}  
       }
+
+      @media only screen {
+        @media (max-width:1000) {
+          width:@fullwidth;
+          max-width:310px;
+        }
+      }
+  
  
     
     } 
+
    
+    @media only screen {
+        @media (max-width:1000px) {
+          width:@fullwidth;
+          min-width: unset;
+        }
+      }
+
+     
 
   } 
 }
@@ -114,8 +135,11 @@
 
 
 
-@media only screen and (max-width:1000px) {
-   .loginWrapper .loginLeft{display: none;}
-   .loginWrapper .loginRight{width:100%; min-width: unset;}
-   .loginWrapper .loginRight .loginFormWrapper{width: 100%; max-width:310px;}
-}
+
+
+      
+
+
+
+
+
