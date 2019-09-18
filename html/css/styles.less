@@ -1,0 +1,107 @@
+
+@login-form-box-bgcolor:#0c2a4b;
+@login-text-color:#fff;
+@login-placeholder-color:#c7c7c7;
+@login-error-color:#ff0000;
+@login-default-font-size:0.8125rem;
+@login-font-size-10:0.625rem;
+@login-font-size-11:0.6875rem;
+@login-font-size-12:0.75rem;
+@login-font-size-14:0.875rem;
+@login-font-size-16:1rem;
+@login-font-size-18:1.125rem;
+@login-font-size-22:1.375rem;
+@login-font-size-24:1.5rem;
+@login-font-size-25:1.5625rem;
+@login-font-size-26:1.625rem;
+@login-font-size-27:1.6875rem;
+@login-font-size-28:1.75rem;
+@login-font-size-29:1.8125rem;
+@login-font-size-30:1.875rem;
+@login-font-size-31:1.9375rem;
+@login-font-size-32:2rem;
+@login-font-size-33:2.0625rem;
+@login-font-size-34:2.125rem;
+@login-font-size-35:2.1875rem;
+@login-default-font:'latoregular';
+@login-bold-font:'latobold';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{margin:0; padding:0; scroll-behavior: smooth; font-family:@login-default-font; color:@login-text-color; font-style:normal; font-size:@login-default-font-size;}
+html{margin:0; padding:0; scroll-behavior: smooth;}
+
+/* fonts css start from here */
+@font-face {
+    font-family: 'latoregular';
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url(../fonts/Lato-Black.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+/* fonts css Ends here */
+
+
+
+
+
+
+
+.login-gradient{background: -moz-linear-gradient(328deg, #538dc0 0%, #3e5cb1 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #538dc0), color-stop(100%, #3e5cb1)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(328deg, #538dc0 0%, #3e5cb1 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(328deg, #538dc0 0%, #3e5cb1 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(328deg, #538dc0 0%, #3e5cb1 100%); /* ie10+ */
+  background: linear-gradient(122deg, #538dc0 0%, #3e5cb1 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#538dc0', endColorstr='#3e5cb1',GradientType=1 ); /* ie6-9 */
+}
+.login-button-gradient{background: -moz-linear-gradient(270deg, #4994b2 0%, #325fa1 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4994b2), color-stop(100%, #325fa1)); /* safari4+,chrome */
+background: -webkit-linear-gradient(270deg, #4994b2 0%, #325fa1 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(270deg, #4994b2 0%, #325fa1 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(270deg, #4994b2 0%, #325fa1 100%); /* ie10+ */
+background: linear-gradient(180deg, #4994b2 0%, #325fa1 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4994b2', endColorstr='#325fa1',GradientType=0 ); /* ie6-9 */
+}
+
+.loginWrapper{display: flex; width: 100vw; height: 100vh; border:1px solid #ff0000;}
+.loginWrapper .loginLeft{display:flex; height:100%;  width:calc(100% - 410px); border:1px solid #ff0000; transform: skewx(-15deg); transform-origin:left top;  background-color: #fff; position: relative; top:0; left:0; background-image:url(../images/login-bg.jpg); background-repeat: no-repeat; background-position: center;  }
+.login-overlay-wrapper{position:absolute; border:1px solid #ff0000; display: flex; align-items: center; justify-content: center; bottom:50px; font-size: @login-font-size-20); text-transform: uppercase; right:0; left:0; text-align: center; transform: skewx(15deg); transform-origin:bottom;}
+.login-overlay-wrapper .login-overlay{padding:20px; display: flex; align-items: center; justify-content: center;}
+.loginWrapper .loginRight{display:flex; width: 30%; min-width:410px; height:100%; position: relative; top:0; right:0; display: flex; align-items: center; justify-content: center;}
+.loginWrapper .loginRight .loginFormWrapper{display: flex; flex-direction: column;  width: 100%; max-width:310px;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer{display: flex; flex-direction: column; padding:22px; background-color: @login-form-box-bgcolor;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block{display: flex; flex-direction: column; margin-top: 30px;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block input[type="text"]{padding:10px; margin:0 0 5px; padding-left: 0; font-size: @login-font-size-12; color:@login-text-color; font-family:@login-default-font-font;  border:0px none; border-bottom:1px solid #fff; background-color: transparent;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block label{ margin:0 0 5px; font-family:@login-regular-font; font-size: @login-font-size-11; color:@login-text-color; text-transform: uppercase;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block ::-webkit-input-placeholder { color:@login-placeholder-color;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block :-ms-input-placeholder { color: @login-placeholder-color;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .form-block ::placeholder {color:@login-placeholder-color;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .error-msg{ font-family:@login-regular-font; font-size: @login-font-size-12; color: @login-error-color;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .forgot-password{margin:30px 0; display: flex; align-items: center; justify-content: center;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .forgot-password a{font-family:@login-regular-font; font-size: @login-font-size-12;  color:@login-text-color; text-decoration: underline;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .login-button{display: flex; align-items: center; justify-content: center;}
+.loginWrapper .loginRight .loginFormWrapper .loginFormContainer .login-button button{background-color:@login-button-gradient; width: 100%; color:@login-text-color; cursor: pointer; border:0px none; padding:10px 15px;}

@@ -1,0 +1,64 @@
+/* fonts css start from here */
+@font-face {
+    font-family: 'latoregular';
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url(../fonts/Lato-Black.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+/* fonts css Ends here */
+
+
+
+/* common css start from here */
+html{ margin:0; padding:0;}
+body{margin:0; padding:0; font-size: 1.5rem; color:#333;}
+*{margin:0; padding:0; box-sizing:border-box; line-height:normal; outline:0px none;}
+ul{ margin:0; padding:0}
+ul li{ margin:0; padding:0; list-style-type:none;}
+ol{ margin:0; padding:0}
+ol li{ margin:0; padding:0; list-style-type:none;}
+textarea{resize:none;}
+input[type="*"]{margin:0; padding:0;}
+input[type="*"]:focus{outline:0px none;}
+button{ margin:0; padding:0;}
+a,a:link,a:active,a:visited{ text-decoration:none;}
+div{display:block;}
+form{ margin:0; padding:0;}
+img{border:0px none; max-width:100%;}
+h1{ margin:0; padding:0; line-height:normal;}
+h2{ margin:0; padding:0; line-height:normal;}
+h3{ margin:0; padding:0; line-height:normal;}
+h4{ margin:0; padding:0; line-height:normal;}
+h5{ margin:0; padding:0; line-height:normal;}
+h6{ margin:0; padding:0; line-height:normal;}
+table{width:100%; border:0px none; border-collapse:collapse;}
+p{margin:0; padding:0;}
+header{ margin:0; padding:0;}
+footer{ margin:0; padding:0;}
+aside{ margin:0; padding:0;}
+section{margin:0; padding:0;}
+label{margin:0; padding:0;}
+blockquote, q {quotes: none;} 
+
+/* common css end here */
