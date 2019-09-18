@@ -86,10 +86,17 @@
       & .error-msg{ font-family:@login-default-font; font-size:@login-font-size-12; color:@login-error-color;}
       
       @media only screen {
-        @media (max-width:529px) {
-          min-width:unset;
-          margin:0 15px;
-        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 767px),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 767px),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 767px),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 767px),
+                only screen and (                min-resolution: 192dpi) and (min-width: 767px),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 767px){
+         min-width:unset;
+          margin:0 15px;         
+
+      }
+        
       }
   
 
@@ -107,9 +114,15 @@
 
    
     @media only screen {
-        @media (max-width:1000px) {
+        @media only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1000px),
+                only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1000px),
+                only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1000px),
+                only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1000px),
+                only screen and (                min-resolution: 192dpi) and (min-width: 1000px),
+                only screen and (                min-resolution: 2dppx)  and (min-width: 1000px){
           width:@fullwidth;
           min-width:unset;
+
         }
       }
 
