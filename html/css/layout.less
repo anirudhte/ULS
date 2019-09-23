@@ -1,0 +1,135 @@
+/* fonts css start from here */
+@font-face {
+    font-family: 'latoregular';
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url(../fonts/Lato-Black.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: normal;
+    font-style: normal
+}
+/* fonts css Ends here */
+
+
+
+/* common css start from here */
+html{ margin:0; padding:0; font-size: @fontSize16;}
+body{margin:0; padding:0; font-size: @defaultFontSize; color:#333;}
+*{margin:0; padding:0; box-sizing:border-box; line-height:normal; outline:0px none;}
+ul{ margin:0; padding:0}
+ul li{ margin:0; padding:0; list-style-type:none;}
+ol{ margin:0; padding:0}
+ol li{ margin:0; padding:0; list-style-type:none;}
+textarea{resize:none;}
+input[type="*"]{margin:0; padding:0;}
+input[type="*"]:focus{outline:0px none;}
+button{ margin:0; padding:0;}
+a,a:link,a:active,a:visited{ text-decoration:none;}
+div{display:block;}
+form{ margin:0; padding:0;}
+img{border:0px none; max-width:100%;}
+h1{ margin:0; padding:0; line-height:normal;}
+h2{ margin:0; padding:0; line-height:normal;}
+h3{ margin:0; padding:0; line-height:normal;}
+h4{ margin:0; padding:0; line-height:normal;}
+h5{ margin:0; padding:0; line-height:normal;}
+h6{ margin:0; padding:0; line-height:normal;}
+table{width:100%; border:0px none; border-collapse:collapse;}
+p{margin:0; padding:0;}
+header{ margin:0; padding:0; top:0; position: fixed; z-index:2200000; background-color: @whiteColor; width:@fullWidth; height:63px; box-shadow: 0px 2px 20px 0 rgba(0, 0, 0, 0.25);}
+footer{ margin:0; padding:0;}
+aside{ position: -webkit-sticky; transition: all 0.2s ease; height:calc(100vh - 63px); background-color: @whiteColor; position: fixed; top: 63px; bottom: 0; z-index:220000;  align-self: flex-start;margin:0; padding:0; flex-shrink: 0; width:@asideWidth; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    @media only screen {
+        @media (max-width:1000px) {
+         margin-left: 0;
+         left: -@asideWidth;
+        }   
+    }
+}
+.aside-position-change aside{ margin-left:0; left:0;}
+
+section{margin:0; padding:0;}
+label{margin:0; padding:0;}
+blockquote, q {quotes: none;} 
+main{display: flex; width:@fullWidth; margin-top: 63px;}
+
+
+
+/* common Drop down menu start here */
+.dropdown-menu{display: none; border:0px none; left:auto; right:0; flex-direction: column; top:100%; position: absolute;  background-color: #fff; min-width: 160px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);  z-index: 1;}
+.dropdown-menu ul{display: flex; margin:0; padding:0; flex-direction: column;}
+.dropdown-menu ul li{display: flex; font-family:@defaultFont; font-size: @defaultFontSize; margin:0; flex-direction: column;}
+.dropdown-menu ul li a{ font-family:@defaultFont; font-size:@defaultFontSize; color: @defaultColor; padding:5px 10px;}
+.dropdown-menu ul li a:hover{background-color: @linkHoverBgColor;}
+.dropdown.open .dropdown-menu{display:flex;}
+/* common Drop down menu start here */
+
+
+.seaFoamGradient{background-image: linear-gradient(110deg, #68c2c8, #303f9f), linear-gradient(to bottom, #2f739f, #2f739f);}
+
+
+/* common css end here */
+
+
+
+
+/*Common Variable for all theme*/
+
+@fullWidth:100%;
+@fullHeight:100%;
+@asideWidth:207px;
+@asideSmallWidth:98px;
+@defaultColor:#4d4d4d;
+@whiteColor:#ffffff;
+@errorColor:#ff0000;
+@linkColor:#1a5aa5;
+@linkHoverBgColor:#cadce9;
+@buttonColor1:#00294a;
+@defaultFontSize:0.8125rem;
+@fontSize10:0.625rem;
+@fontSize11:0.6875rem;
+@fontSize12:0.75rem;
+@fontSize14:0.875rem;
+@fontSize16:1rem;
+@fontSize18:1.125rem;
+@fontSize22:1.375rem;
+@fontSize24:1.5rem;
+@fontSize25:1.5625rem;
+@fontSize26:1.625rem;
+@fontSize27:1.6875rem;
+@fontSize28:1.75rem;
+@fontSize29:1.8125rem;
+@fontSize30:1.875rem;
+@fontSize31:1.9375rem;
+@fontSize32:2rem;
+@fontSize33:2.0625rem;
+@fontSize34:2.125rem;
+@fontSize35:2.1875rem;
+@defaultFont:'latoregular';
+@boldFont:'latobold';
+@cardBoxShadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+@coolBlue:#508bb7;
+@progressBlue:#325da1;
+@radius15:15px;
+@radius18:18px;
+@dashboardTabsBgColor:#f4f4f4;
+
+/*Common Variable for all theme*/
